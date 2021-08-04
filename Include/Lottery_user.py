@@ -7,7 +7,9 @@ data = resp.json()
 
 perfil = data['results'][0]
 
-####afim de avaliar as informações presentes no json, sobre o perfil de cada usuario
+### Identificar o perfil
+##
+# afim de avaliar as informações presentes no json, sobre o perfil de cada usuario
 
 for user in data['results'][:1]:
     print(user['name']['first'],':', '\n')
